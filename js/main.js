@@ -16,5 +16,10 @@ $('img.img-svg').each(function () {
 });
 
 $(function () {
-
-})
+    setTimeout(() => {
+        $('.card__like').on('click', function() {
+            console.log(1);
+            $(this).toggleClass('card__like--active');
+        });
+    }, 1500);
+});
