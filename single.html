@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="page">
+
+  <div class="container">
+    <header class="page__header header">
+      <a class="logo" href="index.html">
+        <img class="logo__img img-svg" src="images/logo.svg" alt="logo">
+        <span class="logo__title">Abito</span>
+      </a>
+
+      <nav class="header__nav nav nav--horizontal">
+        <ul>
+          <li class="nav__item nav__link--horizontal">
+            <a href="#" class="link link--inherit nav__link">Авито</a>
+          </li>
+          <li class="nav__item nav__link--horizontal">
+            <a href="#" class="link link--inherit nav__link">Недвижимость</a>
+          </li>
+          <li class="nav__item nav__link--horizontal">
+            <a href="#" class="link link--inherit nav__link">Работа</a>
+          </li>
+          <li class="nav__item nav__link--horizontal">
+            <a href="#" class="link link--inherit nav__link">Услуги</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__button-group">
+        <button class="button button--text header__button">Вход и регистрация</button>
+        <button class="button button--blue header__button">Подать объявление</button>
+      </div>
+      <div class="search header__search">
+        <input type="text" class="input search__input" placeholder="Поиск по объявлениям">
+        <button class="button button--primary search__button">
+          <img class="button__img img-svg" src="images/search.svg" alt="search">
+          <span class="button__text">Найти</span>
+        </button>
+      </div>
+    </header>
+  </div>
+  <div class="container">
+    <div class=" page__container">
+      <main class="page__main main--single-page">
+        <div class="announcement main__item-main--single-page">
+          <h1 class="h1">Электросамокат kugoo Gx</h1>
+
+          <div class="swiper announcement__swiper">
+            <div class="swiper-container swiper-gallery-main">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="images/announcement/1.webp" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/announcement/2.webp" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/announcement/3.webp" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/announcement/4.webp" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/announcement/5.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/announcement/6.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/announcement/7.jpg" />
+                </div>
+              </div>
+            </div>
+            <div thumbsSlider="" class="swiper-container swiper-gallery">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="images/announcement/1.webp" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/announcement/2.webp" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/announcement/3.webp" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/announcement/4.webp" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/announcement/5.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/announcement/6.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/announcement/7.jpg" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="announcement__text">
+            <p>
+              Продаю не спеша самокат в хорошем состоянии.
+              Торг возможен. <br>
+              За период эксплуатации не выявлено ни одной проблемы.<br>
+              Из минусов — нужно прокачать задний тормоз.<br>
+              Установлен отсекатель сзади.<br>
+              Покрышки CST внедорожные.<br>
+              Все на подшипниках, болты протянуты.<br>
+              Пробег 881км , это немного для такого зверя.<br>
+            </p>
+          </div>
+        </div>
+        <div class="author main__item-aside--single-page">
+          <strong class="author__price">75 000 ₽</strong>
+          <div class="author__wrapper">
+            <div class="author__content">
+              <a href="#" class="author__name">Михаил Воробьев</a>
+              <div class="rating">
+                <div class="rating__stars">
+                  <img src="images/star.svg" alt="star">
+                  <img src="images/star.svg" alt="star">
+                  <img src="images/star.svg" alt="star">
+                  <img src="images/star.svg" alt="star">
+                  <img src="images/star.svg" alt="star">
+                </div>
+                <p class="rating__count">5 отзывов</p>
+              </div>
+              <div class="author__status">Частное лицо</div>
+            </div>
+            <a href="#"><img src="images/author.jpg" alt="фото автора" class="author__img"></a>
+          </div>
+          <div class="author__button">
+            <button class="button button--block button--primary">Показать телефон</button>
+            <button class="button button--block button--succes">Написать сообщение</button>
+          </div>
+        </div>
+      </main>
+      <aside class="page__aside">
+        <div>
+          <a href="#">
+            <img src="images/commercial/1.png" alt="">
+          </a>
+          <a href="#">
+            <img src="images/commercial/2.png" alt="">
+          </a>
+        </div>
+        <footer class="footer">
+          <p class="footer__text">© ООО «Абито», 2011–2021</p>
+          <a href="#" class="link link--gray link--td-under footer__link">Политика конфиденциальности</a>
+          <a href="#" class="link link--gray link--td-under footer__link">Обработка данных</a>
+          <nav class="nav footer__nav">
+            <ul>
+              <li class="nav__item">
+                <a href="#" class="nav__link nav__link--vertical">Реклама на сайте</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link nav__link--vertical">Вакансии</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link nav__link--vertical">Помощь</a>
+              </li>
+            </ul>
+          </nav>
+        </footer>
+      </aside>
+    </div>
+  </div>
+
+
+
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

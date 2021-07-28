@@ -1,3 +1,13 @@
+let swiperGallery = new Swiper(".swiper-gallery", {
+    spaceBetween: 5,
+    width: 68,
+});
+let swiperGalleryMain = new Swiper(".swiper-gallery-main", {
+    thumbs: {
+        swiper: swiperGallery,
+    },
+});
+
 $('img.img-svg').each(function () {
     var $img = $(this);
     var imgClass = $img.attr('class');
