@@ -1,12 +1,10 @@
-let swiperGallery = new Swiper(".swiper-gallery", {
-    spaceBetween: 5,
-    width: 68,
-});
-let swiperGalleryMain = new Swiper(".swiper-gallery-main", {
-    thumbs: {
-        swiper: swiperGallery,
-    },
-});
+function DoCardLike() {
+    $('.card__like').on('click', function() {
+        console.log(1);
+        $(this).toggleClass('card__like--active');
+    });
+
+}
 
 $('img.img-svg').each(function () {
     var $img = $(this);
@@ -26,10 +24,18 @@ $('img.img-svg').each(function () {
 });
 
 $(function () {
-    setTimeout(() => {
-        $('.card__like').on('click', function() {
-            console.log(1);
-            $(this).toggleClass('card__like--active');
+
+    
+    if ($('.swiper').length) {
+        let swiperGallery = new Swiper(".swiper-gallery", {
+            spaceBetween: 5,
+            width: 68,
         });
-    }, 1500);
+        let swiperGalleryMain = new Swiper(".swiper-gallery-main", {
+            thumbs: {
+                swiper: swiperGallery,
+            },
+        });
+    }
 });
+document.addEventListener("DOMContentLoaded", DoCardLike());
